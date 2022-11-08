@@ -1,4 +1,4 @@
-### Challenge 
+# Challenge 
 
 One of the biggest challenges that face any malware analysis is what is known as "Anti" techniques :
 	Anti-VM,
@@ -7,7 +7,7 @@ One of the biggest challenges that face any malware analysis is what is known as
 
 In this article, I will start investigating Anti-VM techniques and as I go I will keep adding to it once I found a new one.
 
-### Sources
+# Sources
 
 Here I will write the sources apps that I faced these Techniques in.
 
@@ -15,7 +15,7 @@ Here I will write the sources apps that I faced these Techniques in.
 	VMDetector.exe (VMDetection app)
 
 
-### VMDetector.exe
+# VMDetector.exe
 
 The program is written in .NET so using "dnspy" we can look at the source code
 
@@ -53,7 +53,7 @@ Every one function then is responsible for checking the gathered information and
 
 To bypass this technique you just need to dive into the app looking for the flags responsible for the decision made by the application and tampering with it just before the comparison for the decision.
 
-### ScoopyNG.exe
+# ScoopyNG.exe
 
 The program is an x64 executable So we will fire up our disassembler to examine the Anti-VM techniques on it.
 
@@ -99,7 +99,7 @@ here is an explanation example
 
 
 
-### Detections & Mitigations
+# Detections & Mitigations
 
 in this section, I will try to document the solutions and automation that may help fast analysis
 
